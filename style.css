@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu{
+    background-color: royalblue;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(241, 9, 9);
+    box-shadow: 5px 0 10px rgb(233, 7, 222);
+    position: fixed;
+}
+
+.logo{
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight:bold;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgba(135, 17, 154, 1);
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu-items li{
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.menu-items li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: rgba(135, 17, 154, 1);
+}
+
+.menu-items li:hover, li.active{
+    background-color: rgb(126, 247, 45);
+    transition: .4s;
+}
+
+
+section {
+    padding: 0 40px;
+    padding-top: 100px;
+  }
+  
+  section h2 {
+    color: #87119A;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-left: 5px solid #87119A;
+    height: 30px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+  }
+  .gallery figure{
+    width: 30%;
+  }
+  
+  .gallery img {
+    width: 100%;
+    display: block;
+  }
+
+  .contacto div{
+    display: flex;
+    padding: 20px;
+  }
+  .contacto div figure{
+    width: 65%;
+  }
+
+  .contacto div ul{
+    padding-left: 20px;
+  }
+
+  .contacto div ul li{
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .contacto div ul li b {
+    font-weight: bolder;
+  }
+
+
+ .footer {
+    background-color: royalblue;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0px -3px 10px rgb(233, 7, 18);
+    
+  }
+  
+  .footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(233, 7, 222);
+  }
+  
+  .footer p a {
+    text-decoration: none;
+    color: rgb(233, 7, 222);
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 858px) {
+    .logo{
+        font-size: 20px;
+        padding-left: 35px;
+    }
+    
+    .menu{
+        height: 60px;
+    }
+  
+    .menu-items{
+        position:fixed;
+        top: -100vh;
+        transition: all .20s;
+        
+    }
+            
+    section{
+        color:white;
+        background-color: rgba(145, 161, 212, 0.87);
+    }
+
+    section p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    section ul li {
+      color: yellow;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer p{
+          color: rgb(5, 5, 23);
+
+    }
+
+}
+
+
